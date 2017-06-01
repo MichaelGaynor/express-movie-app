@@ -1,7 +1,8 @@
 body {
-  padding: 50px;
+  padding: 0 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  font-size: 40px;
+  /* font-size: 40px; */
+  background: linear-gradient(to right, #111, #333, #111);
 }
 
 a {
@@ -9,9 +10,30 @@ a {
 }
 
 h1 {
-    color: green;
+    color: #ddd;
+}
+
+p {
+    color: #ddd;
 }
 
 img{
     max-width: 100%;
+    border-top: 10px;
+}
+
+input {
+    height: 32px;
+}
+
+div.row.header {
+    padding: 20px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+div.movies {
+    margin-top: 150px;
 }

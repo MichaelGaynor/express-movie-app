@@ -3,7 +3,7 @@
 <head>
     <title>Movie App</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
 
 </head>
 <body>
@@ -11,22 +11,21 @@
     <div class="container">
         <div class="row header">
             <div class="text-danger col-sm-12 text-center">
-                <h1><%=message%></h1>
+                <h1><%=movieData.title%></h1>
             </div>
-            <div class="col-sm-6 col-sm-offset-3">
+        </div>
+        <div class="row movies">
+            <!-- <div class="col-sm-6 col-sm-offset-3">
                 <form id="search-form" class="form-inline" action="/search" method="post">
                     <input type="text" placeholder="Movie Title" name="searchString">
                     <button type="submit" class="btn btn-primary">Search</button>
                 </form>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 movies">
-                <% for (let i=0; i<movieData.length; i++){ %>
-                    <div class="col-sm-3">
-                        <a href="/movie/<%= movieData[i].id%>"><img src="<%= imageBaseUrl + movieData[i].poster_path %>"></a>
-                    </div>
-                <% } %>
+            </div> -->
+            <div class="col-sm-12 movie text-center">
+                <img src="<%= imageBaseUrl + movieData.poster_path %>">
+                <div class="col-sm-10 text text-center col-sm-offset-1">
+                    <p><%= movieData.overview%></p>
+                </div>
             </div>
         </div>
     </div>
