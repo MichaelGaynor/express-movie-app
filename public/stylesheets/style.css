@@ -19,21 +19,30 @@ p {
 
 img{
     max-width: 100%;
-    border-top: 10px;
+    height: 100%;
 }
 
 input {
     height: 32px;
 }
 
+nav.navbar {
+  margin-bottom: 0;
+}
+
 div.row.header {
     padding: 20px;
     background-color: #000;
-    position: fixed;
-    top: 0;
+/*     position: fixed;
+    top: 55px; */
     z-index: 100;
 }
 
 div.movies {
-    margin-top: 150px;
+    /* margin-top: 150px; */
+}
+
+div.movies .col-sm-3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
